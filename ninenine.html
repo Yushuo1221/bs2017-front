@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+<style>
+aa{
+    color: coral;
+}
+div{
+    background: black;
+}
+bb{
+    color: white;
+}
+</style>
+</head>
+
+<body>
+    <div id="result">
+        
+    </div>
+    <script>
+        
+    for(var i=1;i<10;i++){
+        for(var j=1;j<10;j++){
+            var result=i*j;
+            // document.writeln(i+"*"+j+"="+result);
+
+            var div=document.createElement("div");
+            div.innerHTML="<aa>"+i+"</aa>" + "<bb> x </bb>"+"<aa>"+j+"</aa>"+ "<bb> = </bb>"+"<aa>"+result+"</aa>";
+            document.getElementById("result").appendChild(div);
+        }
+       
+    }
+    </script>
+</body>
+
+</html>
